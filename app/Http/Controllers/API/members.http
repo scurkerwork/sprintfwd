@@ -1,0 +1,48 @@
+###
+GET http://127.0.0.1:8000/api/members
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/api/members/6
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/members
+Content-Type: application/json
+Accept: application/json
+
+{
+    "first_name": "First name test",
+    "last_name": "Last name test",
+    "city": "Random city",
+    "state": "Another state",
+    "country": "Country of choice",
+    "team_id": 3
+}
+
+###
+PUT http://127.0.0.1:8000/api/members/21
+Content-Type: application/json
+
+{
+    "first_name": "First name test 2",
+    "last_name": "Last name test 2",
+    "city": "Random city 2",
+    "state": "Another state 2",
+    "country": "Country of choice 2",
+    "team_id": 2
+}
+
+###
+PUT http://127.0.0.1:8000/api/members/5/update-team
+Content-Type: application/json
+
+{
+    "team_id": 1
+}
+
+###
+DELETE http://127.0.0.1:8000/api/members/21
+Content-Type: application/json
+
+

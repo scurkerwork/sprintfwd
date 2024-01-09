@@ -1,0 +1,41 @@
+###
+GET http://127.0.0.1:8000/api/projects
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/api/projects/1
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/api/projects/1/members
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/projects
+Content-Type: application/json
+
+{
+  "name": "newProject"
+}
+
+###
+POST http://127.0.0.1:8000/api/projects/25/add-member
+Content-Type: application/json
+
+{
+    "member_id": 5
+}
+
+###
+PUT http://127.0.0.1:8000/api/projects/11
+Content-Type: application/json
+
+{
+  "name": "newProject2"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/projects/11
+Content-Type: application/json
+
+
